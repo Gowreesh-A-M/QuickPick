@@ -16,15 +16,15 @@ class ProductCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          _buildImage(),
+          _buildProductImage(),
           _buildProductName(),
-          _buildPrice(),
+          _buildProductPrice(),
         ],
       ),
     );
   }
 
-  Widget _buildImage() {
+  Widget _buildProductImage() {
     return Expanded(
       child: ClipRRect(
         borderRadius: const BorderRadius.vertical(top: Radius.circular(12)),
@@ -62,7 +62,7 @@ class ProductCard extends StatelessWidget {
     );
   }
 
-  Widget _buildPrice() {
+  Widget _buildProductPrice() {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
       child: Text(
